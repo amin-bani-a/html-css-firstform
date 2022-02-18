@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: steelblue;
+  font-family: "Ubuntu", sans-serif;
+}
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.header-text {
+  color: white;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.logo-section-button {
+  background-color: green;
+  color: black;
+  border: none;
+  border-radius: 2px;
+}
+
+.header-sub-text {
+  color: #ccc;
+  font-size: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 6px;
+  display: inline-block;
+}
+.header-sub-text:hover {
+  color: white;
+}
+button,
+p {
+  color: white;
+}
+.grey-button {
+  background-color: #313131;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.grey-button:hover {
+  background-color: #757575;
+}
+.signup-button {
+  background-color: #00ae1c;
+  color: black;
+  cursor: pointer;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+.signup-button:hover {
+  background-color: #00600f;
+  color: white;
+}
+
+.form {
+  width: 40%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 40px 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 4px;
+}
+.form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.form input {
+  margin-bottom: 40px;
+  padding-bottom: 4px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+  background: none;
+  padding-top: 30px;
+}
+
+.form button {
+  margin-bottom: 40px;
+  border-radius: 4px;
+  border: none;
+  background-color: #add8e6;
+  padding: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: white;
+  font-weight: bold;
+  position: fixed;
+}
+
+.form a {
+  text-decoration: none;
+  color: #add8e6;
+  margin-left: 4px;
+}
+
+.form input:focus::placeholder {
+  transform: translateY(-30px);
+  transition: all 0.8s;
+}
+
+.form input:focus + label { 
+    top: 280px;
+    transition: all 1s;
+
+ }
+.footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 300px;
+  transform: translateX(-50%);
+  text-align: center;
+  border-radius: 8px 8px 0 0;
+}
+
+.form label {
+  position: absolute;
+  top: 310px;
+  left: 24px;
+  /* pointer-events: none; */
+}
+
+
+@media only screen and (max-width: 768px) {
+  .logo-section-button {
+    display: none;
+  }
+}
